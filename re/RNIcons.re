@@ -22,3 +22,25 @@ module FontAwesome = {
       props::{"name": name, "color": get color "#000", "size": get size 16.}
       children;
 };
+
+module SimpleLineIcons = {
+  external simpleLineIcons : ReasonReact.reactClass =
+    "default" [@@bs.module "react-native-vector-icons/SimpleLineIcons"];
+
+  let make ::name ::color=? ::size=? children =>
+    ReasonReact.wrapJsForReason
+      reactClass::simpleLineIcons
+      props::{"name": name, "color": get color "#000", "size": get size 16.}
+      children;
+};
+
+module MaterialCommunityIcons = {
+  external materialCommunityIcons : ReasonReact.reactClass =
+    "default" [@@bs.module "react-native-vector-icons/MaterialCommunityIcons"];
+
+  let make ::name ::color=? ::size=? children =>
+    ReasonReact.wrapJsForReason
+      reactClass::materialCommunityIcons
+      props::{"name": name, "color": get color "#000", "size": get size 16.}
+      children;
+};
