@@ -7,7 +7,6 @@
 	"author": "Gabriel R. Abreu <grsabreu@gmail.com>",
 	"license": "MIT",
 	"devDependencies": {
-		"bs-platform": "^1.9.1"
 	},
 	"scripts": {
 		"start": "yarn bs:watch",
@@ -17,6 +16,7 @@
 	},
 	"peerDependencies": {
 		"react-native-vector-icons": "^4.4.2",
-		"reason-react": "^0.3.0"
+		"reason-react": "^0.3.0",
+		"bs-platform": "^1.9.1"
 	}
 }
