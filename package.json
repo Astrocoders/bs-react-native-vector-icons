@@ -1,12 +1,11 @@
 {
 	"name": "bs-react-native-vector-icons",
-	"version": "1.4.0",
+	"version": "1.4.0-beta",
 	"description": "BuckleScript bindings for react-native-vector-icons",
 	"main": "index.js",
 	"repository": "git@github.com:Astrocoders/bs-react-native-vector-icons.git",
 	"author": "Gabriel R. Abreu <grsabreu@gmail.com>",
 	"license": "MIT",
-	"devDependencies": {},
 	"scripts": {
 		"start": "yarn bs:watch",
 		"bs:build": "bsb -make-world -clean-world",
@@ -14,8 +13,10 @@
 		"bs:setup": "bsb -make-world"
 	},
 	"peerDependencies": {
-		"bs-platform": "^1.9.1",
-		"react-native-vector-icons": "^4.4.2",
+		"bs-platform": "^2.1.0",
+		"react-native-vector-icons": "^4.4.2"
+	},
+	"dependencies": {
 		"reason-react": "^0.3.0"
 	}
 }
