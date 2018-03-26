@@ -10,11 +10,28 @@
 		"start": "yarn bs:watch",
 		"bs:build": "bsb -make-world -clean-world",
 		"bs:watch": "bsb -make-world -clean-world -w",
-		"bs:setup": "bsb -make-world"
+		"bs:setup": "bsb -make-world",
+		"lint:staged": "lint-staged"
 	},
 	"peerDependencies": {
 		"bs-platform": "^2.1.0",
 		"react-native-vector-icons": "^4.4.2",
 		"reason-react": "^0.3.0"
-	}
+	},
+	"devDependencies": {
+		"lint-staged": "^7.0.0",
+		"pre-commit": "^1.2.2",
+		"prettier": "^1.11.1"
+	},
+	"lint-staged": {
+		"*.js": [
+			"prettier --write --single-quote true --trailing-comma all --print-width 120 --semi false",
+			"git add"
+		],
+		"*.re": [
+			"refmt --in-place",
+			"git add"
+		]
+	},
+	"pre-commit": "lint:staged"
 }
