@@ -6,7 +6,10 @@
   "repository": "git@github.com:Astrocoders/bs-react-native-vector-icons.git",
   "bugs": "https://github.com/Astrocoders/bs-react-native-vector-icons/issues",
   "author": "Gabriel R. Abreu <grsabreu@gmail.com>",
-  "keywords": ["bucklescript", "react-native-vector-icons"],
+  "keywords": [
+    "bucklescript",
+    "react-native-vector-icons"
+  ],
   "license": "MIT",
   "scripts": {
     "start": "yarn bs:watch",
@@ -16,14 +19,18 @@
     "lint:staged": "lint-staged"
   },
   "peerDependencies": {
-    "bs-platform": "^2.1.0",
-    "react-native-vector-icons": "^4.4.2",
-    "reason-react": "^0.3.0"
+    "bs-platform": "^4.0.0",
+    "react-native-vector-icons": "^5.0.0",
+    "reason-react": "^0.4.2"
   },
   "devDependencies": {
+    "bs-platform": "^4.0.2",
+    "common-tags": "^1.8.0",
+    "isomorphic-fetch": "^2.2.1",
     "lint-staged": "^7.0.0",
     "pre-commit": "^1.2.2",
-    "prettier": "^1.11.1"
+    "prettier": "^1.11.1",
+    "reason-react": "^0.4.2"
   },
   "lint-staged": {
     "*.js": [
@@ -35,5 +42,9 @@
       "git add"
     ]
   },
-  "pre-commit": "lint:staged"
+  "pre-commit": "lint:staged",
+  "dependencies": {
+    "lodash.camelcase": "^4.3.0",
+    "lodash.capitalize": "^4.2.1"
+  }
 }
