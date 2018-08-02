@@ -2,6 +2,14 @@
 
 BuckleScript bindings for react-native-vector-icons
 
+## Installation
+
+```
+yarn add react-native-vector-icons bs-react-native-vector-icons
+```
+
+Follow the instructor of installation from react-native-vector-icons also then update your `bsconfig.json` `"bs-dependencies"`
+
 ## Generating
 
 Bindings are generated with `node generate`.
