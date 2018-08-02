@@ -16,12 +16,14 @@ module MakeIcon = (Config: MakeIconConfig) => {
     color: string,
     [@bs.optional]
     size: float,
+    [@bs.optional]
+    style: Rebolt.Style.t,
   };
 
-  let make = (~name: name, ~color="#000", ~size=16., children) =>
+  let make = (~name: name, ~color="#000", ~size=16., ~style=?, children) =>
     ReasonReact.wrapJsForReason(
       ~reactClass=icons,
-      ~props=props(~name=Config.nameToJs(name), ~color, ~size, ()),
+      ~props=props(~name=Config.nameToJs(name), ~color, ~size, ~style?, ()),
       children,
     );
 };
