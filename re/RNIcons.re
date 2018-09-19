@@ -30,7 +30,7 @@ module MakeIcon = (Config: MakeIconConfig) => {
 module FontAwesome =
   MakeIcon({
     [@bs.module "react-native-vector-icons/FontAwesome"]
-    external icons : ReasonReact.reactClass = "default";
+    external icons: ReasonReact.reactClass = "default";
     [@bs.deriving jsConverter]
     type name = [
       | [@bs.as "glass"] `_glass
@@ -826,7 +826,7 @@ module FontAwesome =
 module Feather =
   MakeIcon({
     [@bs.module "react-native-vector-icons/Feather"]
-    external icons : ReasonReact.reactClass = "default";
+    external icons: ReasonReact.reactClass = "default";
     [@bs.deriving jsConverter]
     type name = [
       | [@bs.as "activity"] `_activity
@@ -1101,7 +1101,7 @@ module Feather =
 module Entypo =
   MakeIcon({
     [@bs.module "react-native-vector-icons/Entypo"]
-    external icons : ReasonReact.reactClass = "default";
+    external icons: ReasonReact.reactClass = "default";
     [@bs.deriving jsConverter]
     type name = [
       | [@bs.as "500px"] `_500Px
@@ -1523,7 +1523,7 @@ module Entypo =
 module Ionicons =
   MakeIcon({
     [@bs.module "react-native-vector-icons/Ionicons"]
-    external icons : ReasonReact.reactClass = "default";
+    external icons: ReasonReact.reactClass = "default";
     [@bs.deriving jsConverter]
     type name = [
       | [@bs.as "ios-add"] `_iosAdd
@@ -2228,7 +2228,7 @@ module Ionicons =
 module MaterialIcons =
   MakeIcon({
     [@bs.module "react-native-vector-icons/MaterialIcons"]
-    external icons : ReasonReact.reactClass = "default";
+    external icons: ReasonReact.reactClass = "default";
     [@bs.deriving jsConverter]
     type name = [
       | [@bs.as "3d-rotation"] `_3DRotation
@@ -3170,7 +3170,7 @@ module MaterialIcons =
 module MaterialCommunityIcons =
   MakeIcon({
     [@bs.module "react-native-vector-icons/MaterialCommunityIcons"]
-    external icons : ReasonReact.reactClass = "default";
+    external icons: ReasonReact.reactClass = "default";
     [@bs.deriving jsConverter]
     type name = [
       | [@bs.as "access-point"] `_accessPoint
@@ -5790,7 +5790,7 @@ module MaterialCommunityIcons =
 module Foundation =
   MakeIcon({
     [@bs.module "react-native-vector-icons/Foundation"]
-    external icons : ReasonReact.reactClass = "default";
+    external icons: ReasonReact.reactClass = "default";
     [@bs.deriving jsConverter]
     type name = [
       | [@bs.as "address-book"] `_addressBook
@@ -6076,6 +6076,85 @@ module Foundation =
       | [@bs.as "yen"] `_yen
       | [@bs.as "zoom-in"] `_zoomIn
       | [@bs.as "zoom-out"] `_zoomOut
+    ];
+    let nameToJs = nameToJs;
+  });
+module EvilIcons =
+  MakeIcon({
+    [@bs.module "react-native-vector-icons/EvilIcons"]
+    external icons: ReasonReact.reactClass = "default";
+    [@bs.deriving jsConverter]
+    type name = [
+      | [@bs.as "archive"] `_archive
+      | [@bs.as "arrow-down"] `_arrowDown
+      | [@bs.as "arrow-left"] `_arrowLeft
+      | [@bs.as "arrow-right"] `_arrowRight
+      | [@bs.as "arrow-up"] `_arrowUp
+      | [@bs.as "bell"] `_bell
+      | [@bs.as "calendar"] `_calendar
+      | [@bs.as "camera"] `_camera
+      | [@bs.as "cart"] `_cart
+      | [@bs.as "chart"] `_chart
+      | [@bs.as "check"] `_check
+      | [@bs.as "chevron-down"] `_chevronDown
+      | [@bs.as "chevron-left"] `_chevronLeft
+      | [@bs.as "chevron-right"] `_chevronRight
+      | [@bs.as "chevron-up"] `_chevronUp
+      | [@bs.as "clock"] `_clock
+      | [@bs.as "close"] `_close
+      | [@bs.as "close-o"] `_closeO
+      | [@bs.as "comment"] `_comment
+      | [@bs.as "credit-card"] `_creditCard
+      | [@bs.as "envelope"] `_envelope
+      | [@bs.as "exclamation"] `_exclamation
+      | [@bs.as "external-link"] `_externalLink
+      | [@bs.as "eye"] `_eye
+      | [@bs.as "gear"] `_gear
+      | [@bs.as "heart"] `_heart
+      | [@bs.as "image"] `_image
+      | [@bs.as "like"] `_like
+      | [@bs.as "link"] `_link
+      | [@bs.as "location"] `_location
+      | [@bs.as "lock"] `_lock
+      | [@bs.as "minus"] `_minus
+      | [@bs.as "navicon"] `_navicon
+      | [@bs.as "paperclip"] `_paperclip
+      | [@bs.as "pencil"] `_pencil
+      | [@bs.as "play"] `_play
+      | [@bs.as "plus"] `_plus
+      | [@bs.as "pointer"] `_pointer
+      | [@bs.as "question"] `_question
+      | [@bs.as "redo"] `_redo
+      | [@bs.as "refresh"] `_refresh
+      | [@bs.as "retweet"] `_retweet
+      | [@bs.as "sc-facebook"] `_scFacebook
+      | [@bs.as "sc-github"] `_scGithub
+      | [@bs.as "sc-google-plus"] `_scGooglePlus
+      | [@bs.as "sc-instagram"] `_scInstagram
+      | [@bs.as "sc-linkedin"] `_scLinkedin
+      | [@bs.as "sc-odnoklassniki"] `_scOdnoklassniki
+      | [@bs.as "sc-pinterest"] `_scPinterest
+      | [@bs.as "sc-skype"] `_scSkype
+      | [@bs.as "sc-soundcloud"] `_scSoundcloud
+      | [@bs.as "sc-telegram"] `_scTelegram
+      | [@bs.as "sc-tumblr"] `_scTumblr
+      | [@bs.as "sc-twitter"] `_scTwitter
+      | [@bs.as "sc-vimeo"] `_scVimeo
+      | [@bs.as "sc-vk"] `_scVk
+      | [@bs.as "sc-youtube"] `_scYoutube
+      | [@bs.as "search"] `_search
+      | [@bs.as "share-apple"] `_shareApple
+      | [@bs.as "share-google"] `_shareGoogle
+      | [@bs.as "spinner"] `_spinner
+      | [@bs.as "spinner-2"] `_spinner2
+      | [@bs.as "spinner-3"] `_spinner3
+      | [@bs.as "star"] `_star
+      | [@bs.as "tag"] `_tag
+      | [@bs.as "trash"] `_trash
+      | [@bs.as "trophy"] `_trophy
+      | [@bs.as "undo"] `_undo
+      | [@bs.as "unlock"] `_unlock
+      | [@bs.as "user"] `_user
     ];
     let nameToJs = nameToJs;
   });

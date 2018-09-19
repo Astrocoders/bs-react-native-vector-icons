@@ -18,6 +18,7 @@ Update it to add more
 - [x] MaterialCommunityIcons
 - [x] Entypo
 - [x] Foundation
+- [x] EvilIcons
 - [ ] SimpleLineIcons
 - [ ] Octicons
 - [ ] Zocial

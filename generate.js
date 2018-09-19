@@ -45,6 +45,11 @@ const ICONS = [
     name: 'Foundation',
     icons: 'https://raw.githubusercontent.com/oblador/react-native-vector-icons/master/glyphmaps/Foundation.json',
   },
+  {
+    requirePath: 'react-native-vector-icons/EvilIcons',
+    name: 'EvilIcons',
+    icons: 'https://raw.githubusercontent.com/oblador/react-native-vector-icons/master/glyphmaps/EvilIcons.json',
+  },
 ]
 
 const functorModule = stripIndent`
