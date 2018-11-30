@@ -72,7 +72,7 @@ module MakeIcon = (Config: MakeIconConfig) => {
     [@bs.optional]
     size: float,
     [@bs.optional]
-    style: Rebolt.Style.t
+    style: BsReactNative.Style.t
   };
 
   let make = (~name: name, ~color="#000", ~size=16., ~style=?,children) =>
