@@ -1,6 +1,6 @@
 {
   "name": "bs-react-native-vector-icons",
-  "version": "2.0.0-beta.3",
+  "version": "2.0.0-beta.4",
   "description": "BuckleScript bindings for react-native-vector-icons",
   "main": "index.js",
   "repository": "git@github.com:Astrocoders/bs-react-native-vector-icons.git",
@@ -24,7 +24,7 @@
     "reason-react": "^0.4.2"
   },
   "devDependencies": {
-    "bs-platform": "^4.0.2",
+    "bs-platform": "^4.0.5",
     "common-tags": "^1.8.0",
     "isomorphic-fetch": "^2.2.1",
     "lint-staged": "^7.0.0",
@@ -46,6 +46,6 @@
   },
   "pre-commit": "lint:staged",
   "dependencies": {
-    "rebolt": "^0.2.0"
+    "bs-react-native": "^0.10.0"
   }
 }
