@@ -29,7 +29,7 @@
     "bs-react-native": "^0.11.0",
     "common-tags": "^1.8.0",
     "isomorphic-fetch": "^2.2.1",
-    "lint-staged": "^7.0.0",
+    "lint-staged": "^8.1.5",
     "lodash.camelcase": "^4.3.0",
     "lodash.capitalize": "^4.2.1",
     "pre-commit": "^1.2.2",
@@ -42,7 +42,7 @@
       "git add"
     ],
     "*.re": [
-      "refmt --in-place",
+      "bsrefmt --in-place",
       "git add"
     ]
   },
