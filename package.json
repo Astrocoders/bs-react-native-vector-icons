@@ -20,11 +20,13 @@
   },
   "peerDependencies": {
     "bs-platform": "^4.0.0",
+    "bs-react-native": "^0.11.0",
     "react-native-vector-icons": "^5.0.0",
-    "reason-react": "^0.4.2"
+    "reason-react": "^0.7.0"
   },
   "devDependencies": {
-    "bs-platform": "^4.0.5",
+    "bs-platform": "^5.0.3",
+    "bs-react-native": "^0.11.0",
     "common-tags": "^1.8.0",
     "isomorphic-fetch": "^2.2.1",
     "lint-staged": "^7.0.0",
@@ -32,7 +34,7 @@
     "lodash.capitalize": "^4.2.1",
     "pre-commit": "^1.2.2",
     "prettier": "^1.11.1",
-    "reason-react": "^0.4.2"
+    "reason-react": "^0.7.0"
   },
   "lint-staged": {
     "*.js": [
@@ -44,8 +46,5 @@
       "git add"
     ]
   },
-  "pre-commit": "lint:staged",
-  "dependencies": {
-    "bs-react-native": "^0.10.0"
-  }
+  "pre-commit": "lint:staged"
 }
