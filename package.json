@@ -1,6 +1,6 @@
 {
   "name": "bs-react-native-vector-icons",
-  "version": "2.0.0-beta.4",
+  "version": "3.0.0",
   "description": "BuckleScript bindings for react-native-vector-icons",
   "main": "index.js",
   "repository": "git@github.com:Astrocoders/bs-react-native-vector-icons.git",
