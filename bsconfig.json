@@ -1,14 +1,18 @@
 {
   "name": "bs-react-native-vector-icons",
   "reason": {
-    "react-jsx": 2
+    "react-jsx": 3
   },
   "refmt": 3,
   "bs-dependencies": ["reason-react", "bs-react-native"],
   "bsc-flags": ["-bs-super-errors"],
   "sources": [
     {
-      "dir": "re"
+      "dir": "src"
+    },
+    {
+      "dir": "tests",
+      "type": "dev"
     }
   ]
 }

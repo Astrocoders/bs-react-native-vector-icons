@@ -6,7 +6,7 @@ const { stripIndent } = require('common-tags')
 const camelCase = require('lodash.camelcase')
 const capitalize = require('lodash.capitalize')
 
-const FINAL_FILE = 're/RNIcons.re'
+const FINAL_FILE = 'src/RNIcons.re'
 
 const ICONS = [
   {
@@ -52,49 +52,21 @@ const ICONS = [
   },
 ]
 
-const functorModule = stripIndent`
-module type MakeIconConfig = {
-  let icons: ReasonReact.reactClass;
-  type name;
-  let nameToJs: name => string;
-};
-
-module MakeIcon = (Config: MakeIconConfig) => {
-  let icons = Config.icons;
-
-  type name = Config.name;
-
-  [@bs.deriving abstract]
-  type props = {
-    name: string,
-    [@bs.optional]
-    color: string,
-    [@bs.optional]
-    size: float,
-    [@bs.optional]
-    style: BsReactNative.Style.t
-  };
-
-  let make = (~name: name, ~color="#000", ~size=16., ~style=?,children) =>
-    ReasonReact.wrapJsForReason(
-      ~reactClass=icons,
-      ~props=props(~name=Config.nameToJs(name), ~color, ~size, ~style?, ()),
-      children,
-    );
-};
-`
-
 const moduleTemplate = ({ name, requirePath, variant }) => stripIndent`
 module ${name} =
-  MakeIcon({
-    [@bs.module "${requirePath}"]
-    external icons : ReasonReact.reactClass = "default";
+  {
     [@bs.deriving jsConverter]
     type name = [
       ${variant}
     ];
     let nameToJs = nameToJs;
-  });
+
+    [@bs.module "${requirePath}"]
+    [@react.component]
+    external make : (~name: string, ~color: string=?, ~size: float=?) => React.element = "default";
+
+    let makeProps = (~name) => makeProps(~name=nameToJs(name));
+  };
 `
 
 const generateVariantFromIconsSet = icons =>
@@ -114,7 +86,7 @@ function generate() {
         .then(variant => moduleTemplate({ name, requirePath, variant }))
     }),
   )
-    .then(bindings => [functorModule, ...bindings].join('\n'))
+    .then(bindings => bindings.join('\n'))
     .then(file => {
       console.log('Saving file')
       fs.writeFileSync(path.join(__dirname, FINAL_FILE), file)
