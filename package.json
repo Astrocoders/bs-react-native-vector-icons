@@ -20,13 +20,11 @@
   },
   "peerDependencies": {
     "bs-platform": "^4.0.0",
-    "bs-react-native": "^0.11.0",
     "react-native-vector-icons": "^5.0.0",
     "reason-react": "^0.7.0"
   },
   "devDependencies": {
     "bs-platform": "^5.0.3",
-    "bs-react-native": "^0.11.0",
     "common-tags": "^1.8.0",
     "isomorphic-fetch": "^2.2.1",
     "lint-staged": "^8.1.5",
