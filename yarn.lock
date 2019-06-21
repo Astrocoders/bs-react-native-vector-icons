@@ -136,11 +136,6 @@ bs-platform@^5.0.3:
   resolved "https://registry.yarnpkg.com/bs-platform/-/bs-platform-5.0.3.tgz#2b167603ef52574cb9534fabab702f6013715e6c"
   integrity sha512-GAeypBebeDGTay5kJ3v5Z3Whp1Q4zQ0hAttflVtPG3zps88xDZnVAlS3JGIIBDmJFEMyNtv5947a/IWKvWXcPw==
 
-bs-react-native@^0.11.0:
-  version "0.11.0"
-  resolved "https://registry.yarnpkg.com/bs-react-native/-/bs-react-native-0.11.0.tgz#e681d5ce8c925ce635bc301bf5dfdf7d8319d1c8"
-  integrity sha512-6uaM2yXEI99VyyGw7cO+27jWjjdMQH0DYATZ3LnEAr4Ra5qFvGDikAQoriuHJg/jzaHkCQxwc2JrqsVKRJIY6g==
-
 buffer-from@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/buffer-from/-/buffer-from-1.0.0.tgz#4cb8832d23612589b0406e9e2956c17f06fdf531"
